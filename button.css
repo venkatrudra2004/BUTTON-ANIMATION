@@ -1,0 +1,69 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 96vh;
+    background:linear-gradient(rgb(153, 252, 153),rgb(252, 248, 247));
+   
+}    
+    #h1{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:rgb(84, 177, 85);
+    }
+
+  
+
+#buttonbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    background-color:red,blueviolet;
+    overflow: hidden;
+    border-radius: 100px;
+    position: relative;
+
+    
+}
+#rotating{
+    width: 700px;
+    height: 60px;
+    background: linear-gradient(45deg,rgb(225, 141, 141),rgb(231, 200, 144),yellow,rgb(13, 252, 13),rgb(204, 255, 0),rgb(203, 138, 250),violet);
+    rotate: -30deg;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+button{
+    position: absolute;
+    height: 74px;
+    width: 193px;
+    margin-top: 80px ;
+    border-radius: 100px;
+    border:none;
+    font-size: 30px;
+    background:linear-gradient(rgb(236, 240, 238),rgb(94, 247, 94));
+    cursor: pointer;
+    font-style: italic;
+    
+}
+#butt :hover{
+  background-color: #960909;
+}
